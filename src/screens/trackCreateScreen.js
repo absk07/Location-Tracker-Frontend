@@ -25,3 +25,13 @@ const TrackCreateScreen = ({ isFocused }) => {
 const styles = StyleSheet.create({});
 
 export default withNavigationFocus(TrackCreateScreen);
+
+
+
+
+
+
+
+
+
+

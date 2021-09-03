@@ -11,6 +11,7 @@ import TrackDetailScreen from './src/screens/trackDetailScreen';
 import TrackCreateScreen from './src/screens/trackCreateScreen';
 import { Provider as AuthProvider } from './src/context/authContext';
 import { Provider as LocationProvider } from './src/context/locationContext';
+import { Provider as TrackProvider } from './src/context/tracksContext';
 import { setNavigator } from './src/navigationRef';
 
 const switchNavigation = createSwitchNavigator({
@@ -33,10 +34,12 @@ const App = createAppContainer(switchNavigation);
 
 export default () => {
   return (
-    <LocationProvider>
-      <AuthProvider>
-        <App ref={navigator => { setNavigator(navigator) }} />
-      </AuthProvider>
-    </LocationProvider>
+    <TrackProvider>
+      <LocationProvider>
+        <AuthProvider>
+          <App ref={navigator => { setNavigator(navigator) }} />
+        </AuthProvider>
+      </LocationProvider>
+    </TrackProvider>
   );
 }

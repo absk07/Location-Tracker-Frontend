@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="852caa99-8108-44d1-95fe-2bb36d43e600" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/locationContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/locationContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/trackCreateScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/trackCreateScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +51,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1627372431157" />
-    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1630063105494">
+    <state x="93" y="93" width="1350" height="638" key="AVDManager" timestamp="1630585880967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1630063105494" />
+    <state x="93" y="93" width="1350" height="638" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1630585880967" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1627372391828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

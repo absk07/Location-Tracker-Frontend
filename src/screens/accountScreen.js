@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-navigation';
 import { Button } from 'react-native-elements';
 import Spacer from '../components/spacer';
 import { Context as AuthContext } from '../context/authContext';
+import { FontAwesome } from '@expo/vector-icons';
 
 const AccountScreen = () => {
     const  { signout } = useContext(AuthContext);
@@ -22,6 +23,11 @@ const AccountScreen = () => {
             </Spacer>
         </View>
     );
+};
+
+AccountScreen.navigationOptions = {
+    title: 'Account',
+    tabBarIcon: <FontAwesome name="gear" size={20} />
 };
 
 const styles = StyleSheet.create({});

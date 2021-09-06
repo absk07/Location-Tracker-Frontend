@@ -4,7 +4,7 @@ import { ListItem } from 'react-native-elements';
 import Spacer from '../components/spacer';
 import { NavigationEvents } from 'react-navigation';
 import { Context as TrackContext } from '../context/tracksContext';
-
+import { FontAwesome } from '@expo/vector-icons';
 
 const TrackListScreen = ({ navigation }) => {
     const { state, fetchTracks } = useContext(TrackContext);
@@ -13,9 +13,9 @@ const TrackListScreen = ({ navigation }) => {
     return (
         <>
             <NavigationEvents onWillFocus={fetchTracks} />
-            <Spacer>
+            {/* <Spacer>
                 <Text style={{ fontSize: 45 }}>Your Tracks</Text>
-            </Spacer>
+            </Spacer> */}
             <FlatList
                 data={state}
                 keyExtractor={item => item._id}
@@ -25,7 +25,7 @@ const TrackListScreen = ({ navigation }) => {
                             <Spacer>
                                 {/* <ListItem chevron title={item.name} /> */}
                                 <ListItem
-                                    onPress={() => navigation.navigate('TrackDetail')}
+                                    onPress={() => navigation.navigate('TrackDetail', { _id: item._id })}
                                 >
                                     <ListItem.Content>
                                         <ListItem.Title>{item.name}</ListItem.Title>
@@ -39,6 +39,10 @@ const TrackListScreen = ({ navigation }) => {
             />
         </>
     );
+};
+
+TrackListScreen.navigationOptions = {
+    title: 'My Tracks'
 };
 
 const styles = StyleSheet.create({});
